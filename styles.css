@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --poppins: 'Poppins', sans-serif;
+  --padding-container: 100px 0;
+  --color-title: #001A49
+}
+
+html{
+  scroll-behavior: smooth;
+  /* margin-top:50px */
+
+}
+
+body{
+  font-family: var(--poppins);
+}
+
+.container{
+  /* background-color:#000; */
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  /* padding: var(--padding-container) */
+}
+
+.header{
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  /* max-height: 800px; */
+  position: relative;
+  /* background-color:brown */
+  /* display: grid; */
+  /* grid-template-rows: 100px 1fr; */
+}
+
+.header::before{
+  content:"";
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  /* filter:opacity(1%); */
+  background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('./assets/bus_portada.jpeg') ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  filter: brightness(80%);
+  /* clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 50% 100%, 0 85%); */
+  z-index: -1;
+}
+
+.nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  background-color:#000;
+  width: 100%;
+  padding: 20px;
+  align-items: center;  
+}
+
+.nav_title{
+  color:#FFF;
+  font-size: 1rem;
+}
+.nav_title a{
+  text-decoration: none;
+  color:#fff;
+  cursor: pointer
+}
+
+.nav_cta{
+  color:white;
+  text-decoration: none;
+  border: 2px solid white;
+  padding:5px 20px
+}
+
+.hero_container {
+  /* background-color: aqua; */
+  /* height: calc(100% - 20%); */
+  padding-top: 100px;
+  height: 50vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  text-align:center;
+}
+
+.hero_animated_title{
+  height: 50px;
+  color:red;
+  font-weight: bold;
+  font-size: 3rem;
+  color: red
+}
+.hero_animated_title::before{
+  content: "transporte de personal";
+  animation: animated_paragraph infinite 5s;
+}
+
+.hero_paragraph{
+  margin-top: 10px;
+}
+
+@keyframes animated_paragraph{
+  0%{
+    content: 'transporte de personal'
+  }
+  50%{
+    content: 'turismo familiar'
+  }
+  75%{
+    content: 'turismo escolar'
+  }
+}
+
+.nav_list{
+  margin-left: auto;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height:50vh
+}
+.nav_list li{
+  text-align: center;
+  list-style: none;
+  border: 2px solid white;
+  padding: 20px 30px;
+  width: 250px;
+  background-color: #000;
+  color: white;
+  margin: 20px;
+  cursor: pointer;
+  
+}
+.nav_list li a{
+  text-decoration: none;
+  color:white;
+  display:block;
+}
+
+@media (max-width:600px){
+  .nav_list{
+    flex-direction: column;
+  }
+}
+
+/***  section */
+.section{
+  padding-bottom: 50px;
+}
+
+.section_icon{
+  margin: 15px 0px;
+  text-align: center;
+}
+
+.section h2, h3, h4, p{
+  text-align: center;
+  padding: 10px 55px;
+  /* width:80% */
+}
+
+.aboutus{
+  padding-top: 80px;
+  background-color:antiquewhite
+}
+.services{
+  padding-top: 80px;
+  background-color: lightgreen
+}
+
+.contactus{
+  padding-top: 80px;
+  background-color: lightcoral;
+}
+.contact-form{
+  display:flex;
+  flex-direction: column;
+  align-items: center
+}
+
+.contact-form input, textarea{
+  height:40px;
+  width:80%;
+  margin-top: 10px;
+  text-indent: 20px;
+}
+
+.contact-form button{
+  height:40px;
+  width:80%;
+  margin-top: 10px;
+  color:#fff;
+  background-color: #000
+}
+
+.services-card{
+  text-align: center
+}
+.services-card img{
+  width:130px;
+  height:130px;
+  margin: 50px auto 0;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.section-thankyou{
+  width: 100%;
+  height: 100%;
+  /* background-color:aqua; */
+  color:white;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center
+}
+
+.section-thankyou a{
+  margin-top:20px;
+  color:#fff;
+  background-color:#000;
+  text-decoration: none;
+  border: 2px solid #000;
+  padding:15px 40px;
+}
+/*https://metatags.io/*/
