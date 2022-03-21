@@ -132,24 +132,23 @@ body{
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height:50vh
+  height:50vh;
+  list-style: none;
 }
 .nav_list li{
-  text-align: center;
-  list-style: none;
-  border: 2px solid white;
-  padding: 20px 30px;
-  width: 250px;
-  background-color: #000;
-  color: white;
-  margin: 20px;
-  cursor: pointer;
-  
+  margin: 11px 8px;
 }
 .nav_list li a{
+  text-align: center;
+  width: 250px;
+  background-color: #000;
+  cursor: pointer;
+  color: white;
+  border: 2px solid white;
   text-decoration: none;
-  color:white;
   display:block;
+  padding: .5em;
+  font-size: 1.4em;
 }
 
 @media (max-width:600px){
