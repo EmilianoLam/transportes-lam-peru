@@ -82,7 +82,16 @@ body{
   color:white;
   text-decoration: none;
   border: 2px solid white;
-  padding:5px 20px
+  padding: 5px 20px
+}
+
+.nav_cta2{
+  color:white;
+  text-decoration: none;
+  border: 2px solid white;
+  padding: 5px 20px;
+  margin-left:20px
+
 }
 
 .hero_container {
@@ -103,7 +112,6 @@ body{
   color:red;
   font-weight: bold;
   font-size: 3rem;
-  color: red
 }
 .hero_animated_title::before{
   content: "transporte de personal";
@@ -119,10 +127,10 @@ body{
     content: 'transporte de personal'
   }
   50%{
-    content: 'turismo familiar'
+    content: 'servicio turístico'
   }
   75%{
-    content: 'turismo escolar'
+    content: 'traslados escolares'
   }
 }
 
